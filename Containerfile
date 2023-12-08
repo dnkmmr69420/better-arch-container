@@ -1,8 +1,8 @@
 FROM 	quay.io/toolbx-images/archlinux-toolbox:latest
 
 LABEL 	com.github.containers.toolbox="true" \
-      	usage="This image is meant to be used with the toolbox or distrobox command" \
-      	summary="A cloud-native terminal experience" \
+      	usage="arch container that is easier to use" \
+      	summary="This image is arch with yay, git, and base-devel preinstalled" \
       	maintainer="dnkmmr"
 
 RUN	pacman -Syu --noconfirm
