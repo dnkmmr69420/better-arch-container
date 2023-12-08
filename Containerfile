@@ -11,7 +11,7 @@ RUN   	ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/docker && \
       	ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/rpm-ostree && \
       	ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/transactional-update
 
-RUN	pacman -Syu --no-confirm
+RUN	pacman -Syu
      
 RUN	pacman -S base-devel git --no-confirm
 
