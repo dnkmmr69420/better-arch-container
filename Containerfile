@@ -13,7 +13,7 @@ RUN   	ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/docker && \
       	ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/rpm-ostree && \
       	ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/transactional-update
      
-RUN	pacman -S base-devel git --noconfirm
+RUN	pacman -S base-devel git just --noconfirm
 
 # Create build user
 RUN   	useradd -m --shell=/bin/bash build && usermod -L build && \
